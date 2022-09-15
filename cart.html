@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recommendation AI</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<body onload="checkout()">
+    <br><br>
+    <h3 style="margin-left: 10%;">Your Shopping Cart &#128722</h3>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="container">
+                    <div class="row" id="cartItems">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-success mb-3 shadow" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-success">
+                        <h5 class="card-title"  style="text-align: center; color:green;">Payment</h5>
+                    </div>
+                    <div class="card-body text-success shadow">
+                      
+                      <p class="card-text">Price Details:</p>
+                      <p class="card-text">Total : $780</p>
+                      <p class="card-text">Discount  : $80</p>
+                      <p class="card-text">Convenience Fee : $20</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success" style="text-align: center; color: green">Coupon Code : SALE20 Applied</div>
+                    <br>
+                  </div>
+                  <a class="btn btn-success" style="width: 83%;" href="placed.html">Place Order</a>
+                  <br>
+                  <a class="btn btn-danger shadow" style="width: 83%; margin-top: 5%; color: #FFF;" href="index.html">Cancel Order</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    
+
+    <br>
+    <div class="container">
+        <h4 style="text-align: center">You might also like</h4>
+        <br>
+        <div class="row" id="freq">
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class = "row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="checkout-footer">
+                    <div class="content">
+                        <div class="images"> <img class="footer-bank-ssl"
+                                src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png" width="70"
+                                height="37"> <img class="footer-bank-visa"
+                                src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png" width="60"
+                                height="37"> <img class="footer-bank-mc"
+                                src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png" width="60" height="37">
+                            <img class="footer-bank-ae" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"
+                                width="60" height="37"> <img class="footer-bank-dc"
+                                src="https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png" width="60" height="37">
+                            <img class="footer-bank-nb" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"
+                                width="60" height="37"> <img class="footer-bank-cod"
+                                src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png" width="60"
+                                height="37"> <img class="footer-bank-rupay"
+                                src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png" width="60"
+                                height="37"> <img class="footer-bank-paypal"
+                                src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png" width="60"
+                                height="37"> <img class="footer-bank-bhim"
+                                src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png" width="60"
+                                height="37"> </div> <a href="/contactus" class="contact-us">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <br>
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
