@@ -7,7 +7,7 @@ var ids = ['293', '555', '163', '296', '431', '70', '23', '16', '1089', '464', '
 var productsInCart = []
 var productsInCartByID = []
 var YOUR_CLIENT_ID = '92755349225-vvqkfe4teu01oc252simva5gqpoo4av3.apps.googleusercontent.com';
-var YOUR_REDIRECT_URI = 'https://exceptionxd.github.io/gcpTek/index.html';
+var YOUR_REDIRECT_URI = 'http://127.0.0.1:5500/index.html';
 var fragmentString = location.hash.substring(1);
 var params = {};
 let counter = 0;
@@ -151,6 +151,29 @@ function getResponse()
 
   xhr.send(data);
 
+}
+
+  async function login(){
+
+    var email = document.getElementById("email").value
+
+    let headersList = {
+      
+     }
+     
+     let response = await fetch("https://go-apifirst.herokuapp.com/getUser/"+email, { 
+       method: "GET",
+       credentials: 'include',
+       headers: headersList
+     });
+     
+     let data = await response.text();
+     console.log(data);
+
+    if(data.Data != null) 
+      oauth2SignIn();
+    else
+     alert("User is not Registered !!")
 }
 
 function oauth2SignIn() {
