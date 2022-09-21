@@ -23,7 +23,7 @@ async function registerUser(){
       });
       
       xhr.open("POST", "https://go-apifirst.herokuapp.com/addUser");
-      // xhr.setRequestHeader("Access-Control-Allow-Origin", "http://localhost:5500");
+      xhr.setRequestHeader("Access-Control-Allow-Origin", "http://localhost:5500");
       xhr.setRequestHeader("Access-Control-Allow-Origin", "https://exceptionxd.github.io/gcpTek/");
       xhr.setRequestHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
       xhr.setRequestHeader('Access-Control-Allow-Headers', 'Content-Type');
